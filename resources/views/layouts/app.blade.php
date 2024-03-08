@@ -36,9 +36,9 @@
                         
                     @else
                         <span>{{ Auth::user()->name }}</span>
-                        
+                        <!-- <a class="no-underline hover:underline" href="/updateprofile">UpdateProfile</a> -->
                         @if (Route::has('updateprofile'))
-                            <a class="no-underline hover:underline" href="{{ route('updateprofile') }}">UpdateProfile</a>
+                            <a class="no-underline hover:underline" href="{{ route('updateprofile') }}">{{__('updateprofile')}}</a>
                         @endif
 
                         <a href="{{ route('logout') }}"

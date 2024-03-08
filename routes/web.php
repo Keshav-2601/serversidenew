@@ -19,9 +19,9 @@ Route::get('/', [PagesController::class, 'index']);
 
 // Route::get('/enquiry', [PagesController::class,'enquiry']);
 Route::resource('/blog', PostsController::class);
-// Route::get('/updateprofile', [UpdateprofileController::class,'update']->name('updateprofile'));
 Auth::routes();
 
+Route::get('/updateprofile', [UpdateprofileController::class,'update'])->name('updateprofile');
 
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
 

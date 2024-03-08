@@ -27,13 +27,19 @@
                 <nav class="space-x-4 text-gray-300 text-sm sm:text-base">
                     <a class="no-underline hover:underline" href="/">Home</a>
                     <a class="no-underline hover:underline" href="/blog">Blog</a>
+                    <!-- <a class="no-underline hover:underline" href="/enquiry">Enquires</a> -->
                     @guest
                         <a class="no-underline hover:underline" href="{{ route('login') }}">{{ __('Login') }}</a>
                         @if (Route::has('register'))
                             <a class="no-underline hover:underline" href="{{ route('register') }}">{{ __('Register') }}</a>
                         @endif
+                        
                     @else
                         <span>{{ Auth::user()->name }}</span>
+                        
+                        @if (Route::has('updateprofile'))
+                            <a class="no-underline hover:underline" href="{{ route('updateprofile') }}">UpdateProfile</a>
+                        @endif
 
                         <a href="{{ route('logout') }}"
                            class="no-underline hover:underline"

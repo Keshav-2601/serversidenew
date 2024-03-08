@@ -10,4 +10,7 @@ class PagesController extends Controller
     {
         return view('index');
     }
+    public function enquiry(){
+        return view('blog.enquiries');
+    }
 }

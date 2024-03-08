@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\PostsController;
-
+use App\Http\Controllers\Auth\UpdateprofileController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,9 +17,12 @@ use App\Http\Controllers\PostsController;
 
 Route::get('/', [PagesController::class, 'index']);
 
+// Route::get('/enquiry', [PagesController::class,'enquiry']);
 Route::resource('/blog', PostsController::class);
-
+// Route::get('/updateprofile', [UpdateprofileController::class,'update']->name('updateprofile'));
 Auth::routes();
 
+
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
 

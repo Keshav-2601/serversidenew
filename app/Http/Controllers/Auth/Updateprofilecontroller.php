@@ -15,7 +15,7 @@ class Updateprofilecontroller extends Controller{
     $name=$User->name;
     $email=$User->email;
     $password=$User->password;
-    return view("auth.updateprofilepage",['name'=>$name,'email'=>$email,'Password'=>$password]);
+    return view('auth.updateprofilepage',['name'=>$name,'email'=>$email,'password'=>$password]);
    }
     
 }

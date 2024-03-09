@@ -17,7 +17,6 @@ use App\Http\Controllers\Auth\UpdateprofileController;
 
 Route::get('/', [PagesController::class, 'index']);
 
-// Route::get('/enquiry', [PagesController::class,'enquiry']);
 Route::resource('/blog', PostsController::class);
 Auth::routes();
 

@@ -1,12 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="background-image grid grid-cols-1 m-auto">
+<img src="https://wallpaperaccess.com/full/540889.jpg">
+    <div class="grid grid-cols-1 m-auto">
         <div class="flex text-gray-100 pt-10">
             <div class="m-auto pt-4 pb-16 sm:m-auto w-4/5 block text-center">
-                <h1 class="sm:text-white text-5xl uppercase font-bold text-shadow-md pb-14">
-                    Do you want to become a developer?
+                <h1 class="sm:text-black text-5xl uppercase font-bold text-shadow-md pb-14">
+                    Do you want to become a car-designer?
                 </h1>
+                
                 <a 
                     href="/blog"
                     class="text-center bg-gray-50 text-gray-700 py-2 px-4 font-bold text-xl uppercase">
@@ -18,20 +20,21 @@
 
     <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
         <div>
-            <img src="https://cdn.pixabay.com/photo/2014/05/03/01/03/laptop-336704_960_720.jpg" width="700" alt="">
+            <img src="https://th.bing.com/th/id/OIP.Tg45_wNXzHN2N4kCdeAskwHaEK?w=272&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" width="700" alt="">
         </div>
 
         <div class="m-auto sm:m-auto text-left w-4/5 block">
             <h2 class="text-3xl font-extrabold text-gray-600">
-                Struggling to be a better web developer?
+                Struggling to be a better car designer?
             </h2>
             
-            <p class="py-8 text-gray-500 text-s">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus.
+            <p class="py-8 text-black-500 text-s">
+            “Solo chi osa, vive davvero”-means Only those who dare, truly live.
             </p>
 
             <p class="font-extrabold text-gray-600 text-s pb-9">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente magnam vero nostrum! Perferendis eos molestias porro vero. Vel alias.
+            Start by immersing yourself in the world of cars. Spend time in an automotive shop or work directly on a car to understand how they are built and how they function mechanically. This practical experience will give you valuable insights into the automotive industry.
+
             </p>
 
             <a 
@@ -48,16 +51,16 @@
         </h2>
 
         <span class="font-extrabold block text-4xl py-1">
-            Ux Design
+            Car Design
         </span>
         <span class="font-extrabold block text-4xl py-1">
-            Project Management
+            Car_interior Management
         </span>
         <span class="font-extrabold block text-4xl py-1">
             Digital Strategy
         </span>
         <span class="font-extrabold block text-4xl py-1">
-            Backend Development
+            Software Development
         </span>
     </div>
 
@@ -71,8 +74,10 @@
         </h2>
 
         <p class="m-auto w-4/5 text-gray-500">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque exercitationem saepe enim veritatis, eos temporibus quaerat facere consectetur qui.
+    Keep abreast of the latest trends and innovations in automotive design. Attend car shows, network with professionals, and follow industry developments on social media.
+    Create a portfolio showcasing your design concepts, sketches, and 3-D models. A strong portfolio is essential when applying for car designer positions.
         </p>
+    
     </div>
 
     <div class="sm:grid grid-cols-2 w-4/5 m-auto">

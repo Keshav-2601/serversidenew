@@ -48,9 +48,9 @@ php artisan migrate
 ```
 
 ## Contributing
-1.Folk the Repository.
+1.Fork the Repository.
 2.Create a new branch for your changes.
-3. Make changes in your brance.
+3. Make changes in your branch.
 4.Submit a pull request.
 
 This Read.ME fle provide the clear details of projects for anyone who wants to contribute.

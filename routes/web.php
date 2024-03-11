@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\PostsController;
 use App\Http\Controllers\Auth\UpdateprofileController;
+use App\Http\Controllers\ArticleController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,5 +24,9 @@ Auth::routes();
 Route::get('/updateprofile', [UpdateprofileController::class,'update'])->name('update');
 Route::post('/updateprofiledata',[UpdateprofileController::class,'UpdateProfile'])->name('updateprofiledata');
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::Post('/storearticle',[ArticalController::class,'store'])->name('storearticle');
+Route::get('/blog/createarticle',function(){
+    return view('createarticle');
+});
 
 

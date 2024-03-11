@@ -52,7 +52,7 @@ class PostsController extends Controller
 
         $request->image->move(public_path('images'), $newImageName);
 
-        Post::create([
+       $post= Post::create([
             'title' => $request->input('title'),
             'description' => $request->input('description'),
             'slug' => SlugService::createSlug(Post::class, 'slug', $request->title),
@@ -60,8 +60,7 @@ class PostsController extends Controller
             'user_id' => auth()->user()->id
         ]);
 
-        return redirect('/blog')
-            ->with('message', 'Your post has been added!');
+        return redirect()->route('addarticle',['post'=>$post->id]);
     }
 
     /**
@@ -72,8 +71,12 @@ class PostsController extends Controller
      */
     public function show($slug)
     {
-        return view('blog.show')
-            ->with('post', Post::where('slug', $slug)->first());
+        $post= Post::where('slug', $slug)->first();
+            if($post){
+                    return view('blog.show')->with('post', $post);
+            }else{
+                     return redirect('blog.createarticle')->route('addarticle');
+            }
     }
 
     /**

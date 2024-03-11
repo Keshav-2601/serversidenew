@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<form method="Post" action="{{route(storearticle)}}">
+<form method="POST" action="{{route('storearticle')}}">
 <label for ="title">Title</label>
 <input id="title" type="text" />
 <label for="content">Content</lable>

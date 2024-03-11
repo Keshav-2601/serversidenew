@@ -27,6 +27,6 @@ Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->nam
 Route::Post('/storearticle',[ArticalController::class,'store'])->name('storearticle');
 Route::get('/blog/createarticle',function(){
     return view('createarticle');
-});
+})->name('addarticle');
 
 

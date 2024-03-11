@@ -1,23 +1,21 @@
 @extends('layouts.app')
 
 @section('content')
-<img src="https://wallpaperaccess.com/full/540889.jpg">
-    <div class="grid grid-cols-1 m-auto">
-        <div class="flex text-gray-100 pt-10">
-            <div class="m-auto pt-4 pb-16 sm:m-auto w-4/5 block text-center">
-                <h1 class="sm:text-black text-5xl uppercase font-bold text-shadow-md pb-14">
+    <div class="relative">
+        <img src="https://wallpaperaccess.com/full/540889.jpg" class="w-full">
+        <div class="absolute inset-0 flex items-center justify-center z-20">
+            <div class="text-center text-white">
+                <h1 class=" text-5xl uppercase font-bold text-shadow-md pb-14">
                     Do you want to become a car-designer?
                 </h1>
-                
                 <a 
                     href="/blog"
-                    class="text-center bg-gray-50 text-gray-700 py-2 px-4 font-bold text-xl uppercase">
+                    class="inline-block bg-gray-50 text-gray-700 py-2 px-4 font-bold text-xl uppercase">
                     Read More
                 </a>
             </div>
         </div>
     </div>
-
     <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
         <div>
             <img src="https://th.bing.com/th/id/OIP.Tg45_wNXzHN2N4kCdeAskwHaEK?w=272&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" width="700" alt="">

@@ -20,8 +20,8 @@ Route::get('/', [PagesController::class, 'index']);
 Route::resource('/blog', PostsController::class);
 Auth::routes();
 
-Route::get('/updateprofile', [UpdateprofileController::class,'update'])->name('updateprofile');
-
+Route::get('/updateprofile', [UpdateprofileController::class,'update'])->name('update');
+Route::post('/updateprofiledata',[UpdateprofileController::class,'UpdateProfile'])->name('updateprofiledata');
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 

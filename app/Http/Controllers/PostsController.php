@@ -59,7 +59,6 @@ class PostsController extends Controller
             'image_path' => $newImageName,
             'user_id' => auth()->user()->id
         ]);
-
         return redirect()->route('addarticle',['post'=>$post->id]);
     }
 
@@ -71,12 +70,8 @@ class PostsController extends Controller
      */
     public function show($slug)
     {
-        $post= Post::where('slug', $slug)->first();
-            if($post){
-                    return view('blog.show')->with('post', $post);
-            }else{
-                     return redirect('blog.createarticle')->route('addarticle');
-            }
+        return view('blog.show')
+            ->with('post', Post::where('slug', $slug)->first());
     }
 
     /**

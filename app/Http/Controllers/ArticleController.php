@@ -12,8 +12,8 @@ class ArticleController extends Controller{
             'content' => 'required',
         ]);
         Article::create([
-            'title'->$request->title,
-            'content'->$request->content,
+            'title'=>$request->title,
+            'content'=>$request->content,
         ]);
 
     }

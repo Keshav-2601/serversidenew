@@ -52,14 +52,14 @@ class PostsController extends Controller
 
         $request->image->move(public_path('images'), $newImageName);
 
-       $post= Post::create([
+       Post::create([
             'title' => $request->input('title'),
             'description' => $request->input('description'),
             'slug' => SlugService::createSlug(Post::class, 'slug', $request->title),
             'image_path' => $newImageName,
             'user_id' => auth()->user()->id
         ]);
-        return redirect()->route('addarticle',['post'=>$post->id]);
+        
     }
 
     /**

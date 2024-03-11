@@ -23,10 +23,13 @@ Auth::routes();
 
 Route::get('/updateprofile', [UpdateprofileController::class,'update'])->name('update');
 Route::post('/updateprofiledata',[UpdateprofileController::class,'UpdateProfile'])->name('updateprofiledata');
+Route::get('layouts/index',function(){
+    return view('layouts.index');
+});
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::Post('/storearticle',[ArticleController::class,'store'])->name('storearticle');
 Route::get('/blog/createarticle',function(){
-    return view('createarticle');
+    return view('blog.createarticle');
 })->name('addarticle');
 
 

@@ -11,23 +11,26 @@
             <label for="name" class="block text-gray-700 text-sm font-bold mb-2 sm:mb-4">
                 Name:
             </label>
-            <input type="text" id="name" name='name' value="{{ $name }}" />
+            <input class='form-input w-full' type="text" id="name" name='name' value="{{ $name }}" />
         </div>
         <div class="flex flex-wrap">
             <label for="email" class="block text-gray-700 text-sm font-bold mb-2 sm:mb-4">
                 E-Mail Address:
             </label>
-            <input type="Email" id="email" name='email' value="{{$email}}" />
+            <input class='form-input w-full' type="Email" id="email" name='email' value="{{$email}}" />
         </div>
         <div class="flex flex-wrap">
             <label for="Password" class="block text-gray-700 text-sm font-bold mb-2 sm:mb-4">
                 Password:
             </label>
-            <input type="text" id="Password" name='password' value="{{ $password }}"/>
+            <input class='form-input w-full' type="text" id="Password" name='password' value="{{ $password }}"/>
         </div>
 
         <div>
-            <button type="submit">SUBMIT</button>
+            <button class="select-none font-bold whitespace-no-wrap p-2 rounded-lg text-sm leading-normal no-underline text-gray-100 bg-blue-500 hover:bg-blue-700 sm:py-2 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">SUBMIT</button>
+        </div>
+        <div>
+         <a href="layouts/index"><button class="select-none font-bold whitespace-no-wrap p-2 rounded-lg text-sm leading-normal no-underline text-gray-100 bg-red-500 hover:bg-yellow-700 sm:py-2 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">Cancel </a></button>
         </div>
     </form>
 

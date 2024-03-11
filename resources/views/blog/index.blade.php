@@ -58,7 +58,7 @@
                         Edit
                     </a>
                 </span>
-
+               
                 <span class="float-right">
                      <form 
                         action="/blog/{{ $post->slug }}"

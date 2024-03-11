@@ -18,7 +18,7 @@ class CreateArticlesTable extends Migration
             $table->unsignedBigInteger('Post_id');
             $table->string('title');
             $table->text('content');
-            $table->timestamp();
+            $table->timestamps();
             $table->foreign('Post_id')->references('id')->on('posts')->onDelete('cascade');
         });
     }

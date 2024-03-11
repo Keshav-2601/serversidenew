@@ -82,11 +82,11 @@
         <div class="flex bg-yellow-700 text-gray-100 pt-10">
             <div class="m-auto pt-4 pb-16 sm:m-auto w-4/5 block">
                 <span class="uppercase text-xs">
-                    PHP
+                   CARS
                 </span>
 
                 <h3 class="text-xl font-bold py-10">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas necessitatibus dolorum error culpa laboriosam. Enim voluptas earum repudiandae consequuntur ad? Expedita labore aspernatur facilis quasi ex? Nemo hic placeat et?
+                Ferrari’s motto is “Essere Ferrari”, which translates to “Being Ferrari” or “We are Ferrari” in English. This motto represents the pride of a team capable of bringing together the best of Italy, as well as creativity, enterprise, ingenuity, and heart2. Another slogan used by Ferrari is "We are the competition"3. These mottos embody the spirit and identity of Ferrari.
                 </h3>
 
                 <a 

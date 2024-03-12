@@ -17,6 +17,7 @@ use App\Http\Controllers\ArticleController;
 */
 
 Route::get('/', [PagesController::class, 'index']);
+Route::get('/blog/createarticle',[ArticleController::class,'show'])->name('showarticle');
 
 Route::resource('/blog', PostsController::class);
 Auth::routes();
@@ -28,8 +29,5 @@ Route::get('layouts/index',function(){
 });
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::Post('/storearticle',[ArticleController::class,'store'])->name('storearticle');
-Route::get('/blog/createarticle',function(){
-    return view('blog.createarticle');
-})->name('addarticle');
 
 

@@ -17,5 +17,9 @@ class ArticleController extends Controller{
         ]);
 
     }
+    public function show(){
+          return view('blog/createarticle');
+    }
+
 } 
 

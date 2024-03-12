@@ -50,8 +50,7 @@
                     class="hidden">
             </label>
         </div>
-        <a href="/blog/createarticle" class="uppercase mt-15 bg-blue-500 text-gray-100 text-lg font-extrabold py-4 px-8 rounded-3xl">Add-Article</a>
-         
+        
         <button    
             type="submit"
             class="uppercase mt-15 bg-blue-500 text-gray-100 text-lg font-extrabold py-4 px-8 rounded-3xl">

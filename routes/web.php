@@ -17,9 +17,9 @@ use App\Http\Controllers\ArticleController;
 */
 
 Route::get('/', [PagesController::class, 'index']);
-Route::get('/blog/createarticle',[ArticleController::class,'show'])->name('showarticle');
-
+Route::get('blog/createarticle',[ArticleController::class,'show'])->name('showarticle');
 Route::resource('/blog', PostsController::class);
+
 Auth::routes();
 
 Route::get('/updateprofile', [UpdateprofileController::class,'update'])->name('update');
@@ -27,7 +27,7 @@ Route::post('/updateprofiledata',[UpdateprofileController::class,'UpdateProfile'
 Route::get('layouts/index',function(){
     return view('layouts.index');
 });
+Route::get('/storearticle',[ArticleController::class,'store'])->name('storearticle');
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::Post('/storearticle',[ArticleController::class,'store'])->name('storearticle');
 
 

@@ -60,6 +60,7 @@ class PostsController extends Controller
             'user_id' => auth()->user()->id
         ]);
         
+        return redirect('/blog/create');
     }
 
     /**
@@ -126,5 +127,6 @@ class PostsController extends Controller
         return redirect('/blog')
             ->with('message', 'Your post has been deleted!');
     }
+    
 }
 

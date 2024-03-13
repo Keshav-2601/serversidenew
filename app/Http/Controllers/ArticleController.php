@@ -13,11 +13,14 @@ class ArticleController extends Controller{
     }
 
     public function store(Request $request){
+        //dd($request->all());
         $request->validate([
             'title' => 'required',
             'content' => 'required',
+            'post_id'=>'required'
         ]);
-        $postid=session('globalvar');
+        $postid=intval(session('globalvar'));
+        // dd(session()->all());
         Article::create([
             'title'=>$request->title,
             'content'=>$request->content,

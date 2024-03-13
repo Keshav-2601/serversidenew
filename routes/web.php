@@ -17,9 +17,9 @@ use App\Http\Controllers\ArticleController;
 */
 
 Route::get('/', [PagesController::class, 'index']);
-Route::post('/storearticle/{post}',[ArticleController::class,'store'])->name('storearticle');
+Route::post('/storearticle',[ArticleController::class,'store'])->name('storearticle');
 
-Route::get('blog/createarticle',[ArticleController::class,'show'])->name('writearticle');
+Route::get('blog/{id}/createarticle',[ArticleController::class,'show'])->name('writearticle');
 Route::resource('/blog', PostsController::class);
 
 Auth::routes();

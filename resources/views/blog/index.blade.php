@@ -48,15 +48,14 @@
             <a href="/blog/{{ $post->slug }}" class="uppercase bg-blue-500 text-gray-100 text-lg font-extrabold py-4 px-8 rounded-3xl">
                 Keep Reading
             </a>
-            
            
             @if (isset(Auth::user()->id) && Auth::user()->id == $post->user_id)
-            <a href="{{route('writearticle')}}" class="uppercase mt-15 bg-blue-500 text-gray-100 text-lg font-extrabold py-4 px-8 rounded-3xl">Write-Article</a>
+            <a href="{{route('writearticle',['id'=>$post->id])}}" class="uppercase mt-15 bg-blue-500 text-gray-100 text-lg font-extrabold py-4 px-8 rounded-3xl">Write-Article</a>
 
                 <span class="float-right">
                     <a 
                         href="/blog/{{ $post->slug }}/edit"
-                        class="text-gray-700 italic hover:text-gray-900 pb-1 border-b-2">
+                        class="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mr-4">
                         Edit
                     </a>
                 </span>
@@ -69,7 +68,7 @@
                         @method('delete')
 
                         <button
-                            class="text-red-500 pr-3"
+                            class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full"
                             type="submit">
                             Delete
                         </button>

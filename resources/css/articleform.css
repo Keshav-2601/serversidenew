@@ -1,6 +1,8 @@
 
-.l1{
-    color: #007BFF;
+body{
+    background-image: url("https://th.bing.com/th/id/R.e4e6b445294fda371ae2eefe18470ce1?rik=ChfrVeIX36VSpg&pid=ImgRaw&r=0");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .articleform {
     width: 100%;
@@ -13,6 +15,9 @@
 .articleform label {
     display: block;
     margin-bottom: 5px;
+    text-align: center; 
+    font-weight: bold; 
+    color:white;
 }
 
 .articleform input, .articleform textarea {
@@ -20,6 +25,7 @@
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    
 }
 
 .articleform button {
@@ -33,4 +39,11 @@
 
 .articleform button:hover {
     background-color: #0056b3;
+}
+.articleform input#title{
+    
+    margin-bottom: 20px;
+}
+.articleform textarea#content{
+margin-bottom: 20px;
 }

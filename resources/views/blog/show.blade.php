@@ -1,5 +1,7 @@
 @extends('layouts.app')
-
+@section('styles')
+ <link href="{{ asset('css/home.css') }}" rel="stylesheet">
+@endsection
 @section('content')
 <div class="w-4/5 m-auto text-left">
     <div class="py-15">

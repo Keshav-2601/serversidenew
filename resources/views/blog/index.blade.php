@@ -1,5 +1,7 @@
 @extends('layouts.app')
-
+@section('styles')
+<link href="{{ asset('css/blogpage.css') }}" rel="stylesheet">
+@endsection
 @section('content')
 <div class="w-4/5 m-auto text-center">
     <div class="py-15 border-b border-gray-200">
@@ -52,15 +54,15 @@
             @if (isset(Auth::user()->id) && Auth::user()->id == $post->user_id)
             <a href="{{route('writearticle',['id'=>$post->id])}}" class="uppercase mt-15 bg-blue-500 text-gray-100 text-lg font-extrabold py-4 px-8 rounded-3xl">Write-Article</a>
 
-                <span class="float-right">
+                <span class="blogbutton">
                     <a 
                         href="/blog/{{ $post->slug }}/edit"
-                        class="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mr-4">
+                        class="editbutton">
                         Edit
                     </a>
                 </span>
                
-                <span class="float-right">
+                <span class="blogbutton">
                      <form 
                         action="/blog/{{ $post->slug }}"
                         method="POST">
@@ -68,7 +70,7 @@
                         @method('delete')
 
                         <button
-                            class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full"
+                            class="deletebutton"
                             type="submit">
                             Delete
                         </button>

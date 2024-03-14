@@ -19,7 +19,8 @@ mix
     require('postcss-nested'),
     require('autoprefixer'),
   ])
-  .postCss('resources/css/articleform.css', 'public/css');
+  .postCss('resources/css/articleform.css', 'public/css')
+  .postCss('resources/css/blogpage.css', 'public/css');
 
 if (mix.inProduction()) {
   mix

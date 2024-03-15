@@ -27,7 +27,7 @@ class ArticleController extends Controller{
             'post_id'=>$postid
         ]);
        
-         return view('blog/index');
+        return redirect()->route('index');
         
     }
     public function show($postid){

@@ -7,9 +7,10 @@ use App\Http\Requests;
 
 class ArticleController extends Controller{
 
-    protected $glovabvar;
+    protected $globalvar;
     public function __construct(){
         $this->globalvar =null;
+        
     }
 
     public function store(Request $request){
@@ -34,6 +35,9 @@ class ArticleController extends Controller{
         session(['globalvar'=>$postid]);
           return view('blog/createarticle',['postid'=>$postid]);
     }
-    
+    public function showart($postid){
+        $Articles=Article::where('post_id',$postid)->get();
+        return view('blog/Showarticlepage',['articles'=>$Articles]);
+    }
 } 
 

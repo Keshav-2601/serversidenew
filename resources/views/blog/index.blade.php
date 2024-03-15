@@ -77,6 +77,13 @@
 
                     </form>
                 </span>
+                <span class="blogbutton">
+                    <a 
+                        href="{{route('showarticlepage',['id'=>$post->id])}}"
+                        class="editbutton">
+                        Show-Article
+                    </a>
+                </span>
             @endif
         </div>
     </div>    

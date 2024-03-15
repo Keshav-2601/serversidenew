@@ -20,6 +20,7 @@ Route::get('/', [PagesController::class, 'index'])->name('index');
 Route::post('/storearticle',[ArticleController::class,'store'])->name('storearticle');
 
 Route::get('blog/{id}/createarticle',[ArticleController::class,'show'])->name('writearticle');
+Route::get('{id}/showarticle',[ArticleController::class,'showart'])->name('showarticlepage');
 Route::resource('/blog', PostsController::class);
 
 Auth::routes();

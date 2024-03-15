@@ -1,7 +1,7 @@
 body{
     background-image: url("https://th.bing.com/th/id/R.e2bcc6eadd3ef85433e25e3527bb4026?rik=r7eX4gGy%2bkM1dA&riu=http%3a%2f%2fwww.hdcarwallpapers.com%2fwalls%2fporsche_drive_supercar_4k-HD.jpg&ehk=wl%2bjBBNH%2brK2UbaK%2biMisn5eDKzCTL97K%2boGuED0aRo%3d&risl=1&pid=ImgRaw&r=0");
-    
 }
+
 .blogdescp, .blogtext, .blogtitle, .blogusername {
     -webkit-text-decoration: solid;
             text-decoration: solid;
@@ -12,51 +12,54 @@ body{
     font-size: 23px;
     line-height: 1.6;
     color:white;
+    margin-bottom: 20px; 
 }
 
 .blogtitle {
     font-size: 2em; 
 }
 
-.Blogmainbutton{
+.Blogmainbutton, .editbutton, .showbutton {
     text-transform: uppercase; 
-    background-color: #3b82f6;
-    color: #f3f4f6;
-    font-size: 1.125rem; 
+    font-size: 0.875rem; 
     font-weight: 800; 
-    padding: 1rem 2rem; 
+    padding: 0.5rem 1rem; 
     border-radius: 9999px; 
     position: relative;
-    top:100px;
+    top: 0; 
+    right: 0; 
+    left: 0; 
+    margin-right: 10px; 
+}
+.deletebutton{
+    text-transform: uppercase; 
+    font-size: 0.875rem; 
+    font-weight: 800; 
+    padding: 0.5rem 1rem; 
+    border-radius: 9999px; 
+    position: relative;
+    top: 20px; 
+    right: 0; 
+    left: 0; 
+    margin-right: 10px; 
+}
+.Blogmainbutton {
+    background-color: #3b82f6;
+    color: #f3f4f6;
 }
 
-.editbutton {
+.editbutton, .showbutton {
     background-color: #4bc6ff;
     color: black;
     font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 9999px;
-    transition: background-color 0.2s ease;
-    position: relative;
-    right: 250px; 
-    top:195px; 
-}
-
-.edit-button:hover {
-    background-color: #c53030;
 }
 
 .deletebutton {
     background-color: #f56565;
     font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 9999px;
-    transition: background-color 0.2s ease;
-    position:relative;
-    top:170px;
-    left:10px;
 }
 
-.delete-button:hover {
+.edit-button:hover, .delete-button:hover {
     background-color: #c53030;
 }
+

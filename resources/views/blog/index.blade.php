@@ -50,6 +50,13 @@
             <a href="/blog/{{ $post->slug }}" class="Blogmainbutton">
                 Keep Reading
             </a>
+            <span class="blogbutton">
+                    <a 
+                        href="{{route('showarticlepage',['id'=>$post->id])}}"
+                        class="showbutton">
+                        Show-Article
+                    </a>
+                </span>
            
             @if (isset(Auth::user()->id) && Auth::user()->id == $post->user_id)
             <a href="{{route('writearticle',['id'=>$post->id])}}" class="Blogmainbutton">Write-Article</a>
@@ -77,13 +84,7 @@
 
                     </form>
                 </span>
-                <span class="blogbutton">
-                    <a 
-                        href="{{route('showarticlepage',['id'=>$post->id])}}"
-                        class="editbutton">
-                        Show-Article
-                    </a>
-                </span>
+                
             @endif
         </div>
     </div>    

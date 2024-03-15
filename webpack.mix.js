@@ -21,7 +21,7 @@ mix
   ])
   .postCss('resources/css/articleform.css', 'public/css')
   .postCss('resources/css/blogpage.css', 'public/css')
-  
+  .postCss('resources/css/showartpage.css', 'public/css');
 
 if (mix.inProduction()) {
   mix

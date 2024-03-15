@@ -1,11 +1,15 @@
-h2 {
+.body{
+    background-color:hotpink;
+}
+.titleheading {
     color: #333; 
     font-family: Arial, sans-serif; 
     font-size: 24px; 
     margin-bottom: 10px; 
 }
 
-p {
+.title
+content {
     color: #666; 
     font-family: 'Times New Roman', Times, serif; 
     font-size: 16px; 

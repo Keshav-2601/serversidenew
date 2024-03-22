@@ -24,9 +24,10 @@ Route::get('{id}/showarticle',[ArticleController::class,'showart'])->name('showa
 Route::resource('/blog', PostsController::class);
 
 Auth::routes();
-
 Route::get('/updateprofile', [UpdateprofileController::class,'update'])->name('update');
 Route::post('/updateprofiledata',[UpdateprofileController::class,'UpdateProfile'])->name('updateprofiledata');
+
+
 Route::get('layouts/index',function(){
     return view('layouts.index');
 });
